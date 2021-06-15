@@ -1,0 +1,187 @@
+@import "../responsive-sizes.scss";
+
+$primary: #4845D2;
+$secondary: #f1c40f;
+.header {
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+        padding: 10px 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        img {
+            max-width: 200px;
+        }
+    }
+
+    &-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        nav {
+            display: flex;
+
+            & li > a {
+                padding: 10px 15px;
+                text-decoration: none;
+                color: #fff;
+                transition: .2s;
+                border-radius: 20px;
+                margin-right: 10px;
+                font-weight: 600;
+
+                &.active {
+                    background-color: #fff;
+                    color: $primary;
+                }
+
+                &:hover {
+                    background-color: #fff;
+                    color: $primary;
+                    transition: .2s;
+                    box-shadow: 0px 0px 20px #dcdcdc;
+                }
+            }
+        }
+    }
+
+    &-portada {
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &-container {
+            width: 100%;
+            display: flex;
+            padding: 0 30px;
+            justify-content: space-between;
+
+            .left {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 15px;
+                padding-right: 15px;
+
+                &-titulo {
+                    font-size: 2.1rem;
+                    color: $secondary;
+                    font-weight: 600;
+                }
+
+                &-subtitulo {
+                    font-size: 1.5rem;
+                    color: #fff;
+                }
+            }
+
+            .right {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    max-height: 420px;
+                    transition: all 300ms;
+                    animation: move_vector 6s ease-in-out infinite;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}
+
+@keyframes move_vector{
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+
+@media screen and (max-width: $screen-16) {
+    .header{
+        &-container{
+            max-width: 1400px;
+        }
+
+        &-portada {
+        
+            &-container {
+                max-width: 1400px;
+            }
+        }
+    }
+}
+@media screen and (max-width: $screen-14) {
+    .header{
+        &-container{
+            max-width: 1300px;
+        }
+
+        &-portada {
+        
+            &-container {
+                max-width: 1300px;
+            }
+        }
+    }
+}
+@media screen and (max-width: $screen-13) {
+    .header{
+        &-container{
+            max-width: 1250px;
+        }
+
+        &-portada {
+        
+            &-container {
+                max-width: 1250px;
+            }
+        }
+    }
+}
+@media screen and (max-width: $screen-12) {
+    .header{
+        &-container{
+            max-width: 1180px;
+        }
+
+        &-portada {
+        
+            &-container {
+                max-width: 1180px;
+            }
+        }
+    }
+ }
+@media screen and (max-width: $screen-10) {
+    .header{
+        &-container{
+            max-width: 1000px;
+        }
+
+        &-portada {
+        
+            &-container {
+                max-width: 1000px;
+            }
+        }
+    }
+ }
