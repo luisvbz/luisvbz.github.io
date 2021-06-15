@@ -192,7 +192,7 @@ template {
   align-items: center;
 }
 .header-container {
-  padding: 10px 30px;
+  padding: 15px 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -210,26 +210,27 @@ template {
   display: flex;
 }
 .header-navbar nav li > a {
-  padding: 10px 15px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #fff;
   transition: 0.2s;
   border-radius: 20px;
   margin-right: 10px;
-  font-weight: 600;
 }
 .header-navbar nav li > a.active {
-  background-color: #fff;
-  color: #4845D2;
+  background-color: #f1c40f;
+  color: #fff;
 }
 .header-navbar nav li > a:hover {
   background-color: #fff;
   color: #4845D2;
   transition: 0.2s;
-  box-shadow: 0px 0px 20px #dcdcdc;
+  box-shadow: 0px 0px 10px #dcdcdc;
 }
 .header-portada {
-  background-color: #4845D2;
+  background-image: url(../assets/images/header.svg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
