@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Rinconada</title>
+    <link rel="stylesheet" href="css-portal/style-login.css" />
+  </head>
+  <body>
+    <main>
+      <div class="contentLogin">
+        <div class="part2">
+          <div class="part1">
+            <img src="imgs/logo_blanco2.png" alt="" />
+            <div class="contentText">
+              <h2>Iniciar sesión</h2>
+              <p>¡Ingresa tus datos y accede al exclusivo Club La Rinconada!</p>
+            </div>
+          </div>
+          <div class="formulario">
+            <h1>Inicia sesión</h1>
+            <p class="p2">
+              ¡Ingresa tus datos y accede al exclusivo Club La Rinconada!
+            </p>
+            <form action="" class="formLogin">
+              <label for="correo" class="correo">
+                <p>DNI</p>
+                <!-- <input type="text" name="email" id="correo" /> -->
+                <input type="number" name="dni" id="dni" />
+              </label>
+              <label for="contraseña" class="contraseña">
+                <p>Contraseña</p>
+                <input type="password" name="password" id="contraseña" />
+              </label>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="recordar_contraseña"
+                  id="recordar_contraseña"
+                />
+                <label for="recordar_contraseña"> </label>
+                <p>Recordar contraseña</p>
+              </div>
+              <div class="mensajeError" id="mensajeError">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20.8C14.3339 20.8 16.5722 19.8729 18.2225 18.2225C19.8729 16.5722 20.8 14.3339 20.8 12C20.8 9.66609 19.8729 7.42778 18.2225 5.77746C16.5722 4.12714 14.3339 3.2 12 3.2C9.66609 3.2 7.42778 4.12714 5.77746 5.77746C4.12714 7.42778 3.2 9.66609 3.2 12C3.2 14.3339 4.12714 16.5722 5.77746 18.2225C7.42778 19.8729 9.66609 20.8 12 20.8ZM11.34 6.431H12.66L12.571 13.491H11.43L11.342 6.431H11.34ZM12 17.073C11.89 17.0743 11.7808 17.0537 11.6789 17.0122C11.577 16.9707 11.4844 16.9092 11.4066 16.8314C11.3288 16.7536 11.2673 16.661 11.2258 16.5591C11.1843 16.4572 11.1637 16.348 11.165 16.238C11.163 16.1278 11.1832 16.0183 11.2244 15.9161C11.2657 15.8138 11.3271 15.721 11.405 15.643C11.483 15.5651 11.5758 15.5037 11.6781 15.4624C11.7803 15.4212 11.8898 15.401 12 15.403C12.476 15.403 12.835 15.763 12.835 16.238C12.837 16.3482 12.8168 16.4577 12.7756 16.5599C12.7343 16.6622 12.6729 16.755 12.595 16.833C12.517 16.9109 12.4242 16.9723 12.3219 17.0136C12.2197 17.0548 12.1102 17.075 12 17.073Z"
+                    fill="#C53030"
+                  />
+                </svg>
+                <p>
+                  Algunos de los datos que has introducido no son correctos. Por
+                  favor, revisa que la información ingresada sea la correcta.
+                </p>
+              </div>
+              <button type="submit">Iniciar sesión</button>
+            </form>
+          </div>
+        </div>
+        <div class="contentImg">
+          <img src="imgs/portada_login.png" alt="" />
+        </div>
+      </div>
+      <div class="modalContrasena active">
+        <div class="container">
+          <div class="content">
+            <div class="closeModal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="10"
+                viewBox="0 0 11 10"
+                fill="none"
+              >
+                <path
+                  d="M5.48024 6.1321L1.96741 9.64492C1.83598 9.77636 1.6687 9.84207 1.46558 9.84207C1.26246 9.84207 1.09518 9.77636 0.96375 9.64492C0.832317 9.51349 0.766602 9.34621 0.766602 9.14309C0.766602 8.93997 0.832317 8.77269 0.96375 8.64126L4.47658 5.12843L0.96375 1.61561C0.832317 1.48418 0.766602 1.3169 0.766602 1.11378C0.766602 0.910653 0.832317 0.743375 0.96375 0.611943C1.09518 0.480511 1.26246 0.414795 1.46558 0.414795C1.6687 0.414795 1.83598 0.480511 1.96741 0.611943L5.48024 4.12477L8.99307 0.611943C9.1245 0.480511 9.29178 0.414795 9.4949 0.414795C9.69802 0.414795 9.8653 0.480511 9.99673 0.611943C10.1282 0.743375 10.1939 0.910653 10.1939 1.11378C10.1939 1.3169 10.1282 1.48418 9.99673 1.61561L6.4839 5.12843L9.99673 8.64126C10.1282 8.77269 10.1939 8.93997 10.1939 9.14309C10.1939 9.34621 10.1282 9.51349 9.99673 9.64492C9.8653 9.77636 9.69802 9.84207 9.4949 9.84207C9.29178 9.84207 9.1245 9.77636 8.99307 9.64492L5.48024 6.1321Z"
+                  fill="#003C3E"
+                />
+              </svg>
+            </div>
+            <h3>Actualiza tu contraseña</h3>
+            <form action="" id="cambiarContraseña">
+              <label for="contrasenaActual" class="contrasenaActual">
+                <p>Contraseña Actual</p>
+                <input
+                  type="text"
+                  name="contrasena_actual"
+                  id="contraseñaActual"
+                />
+              </label>
+              <label for="contrasenaNueva" class="contrasenaNueva">
+                <p>Contraseña Nueva</p>
+                <input
+                  type="password"
+                  name="contrasenaNueva"
+                  id="contrasenaNueva"
+                />
+              </label>
+              <label for="confirmarContrasena" class="confirmarContrasena">
+                <p>Confirmar contraseña</p>
+                <input
+                  type="password"
+                  name="confirmarContrasena"
+                  id="confirmarContrasena"
+                />
+              </label>
+              <div class="mensajeErrorContrasena">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM10 18.8C12.3339 18.8 14.5722 17.8729 16.2225 16.2225C17.8729 14.5722 18.8 12.3339 18.8 10C18.8 7.66609 17.8729 5.42778 16.2225 3.77746C14.5722 2.12714 12.3339 1.2 10 1.2C7.66609 1.2 5.42778 2.12714 3.77746 3.77746C2.12714 5.42778 1.2 7.66609 1.2 10C1.2 12.3339 2.12714 14.5722 3.77746 16.2225C5.42778 17.8729 7.66609 18.8 10 18.8ZM9.34 4.431H10.66L10.571 11.491H9.43L9.342 4.431H9.34ZM10 15.073C9.88997 15.0743 9.78079 15.0537 9.67888 15.0122C9.57697 14.9707 9.48438 14.9092 9.40658 14.8314C9.32877 14.7536 9.26731 14.661 9.22583 14.5591C9.18434 14.4572 9.16366 14.348 9.165 14.238C9.16296 14.1278 9.18317 14.0183 9.22441 13.9161C9.26566 13.8138 9.32709 13.721 9.40503 13.643C9.48298 13.5651 9.57584 13.5037 9.67807 13.4624C9.78029 13.4212 9.88979 13.401 10 13.403C10.476 13.403 10.835 13.763 10.835 14.238C10.837 14.3482 10.8168 14.4577 10.7756 14.5599C10.7343 14.6622 10.6729 14.755 10.595 14.833C10.517 14.9109 10.4242 14.9723 10.3219 15.0136C10.2197 15.0548 10.1102 15.075 10 15.073Z"
+                    fill="#C53030"
+                  />
+                </svg>
+                <p>La contraseña nueva y la confirmación deben coincidir.</p>
+              </div>
+              <button type="submit">Guardar cambios</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modalPopup">
+        <div class="container">
+          <div class="content">
+            <div class="closeModal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+              >
+                <path
+                  d="M6.99974 8.28332L2.50807 12.775C2.34002 12.943 2.12613 13.0271 1.86641 13.0271C1.60668 13.0271 1.39279 12.943 1.22474 12.775C1.05668 12.6069 0.972656 12.393 0.972656 12.1333C0.972656 11.8736 1.05668 11.6597 1.22474 11.4916L5.71641 6.99998L1.22474 2.50832C1.05668 2.34026 0.972656 2.12637 0.972656 1.86665C0.972656 1.60693 1.05668 1.39304 1.22474 1.22498C1.39279 1.05693 1.60668 0.9729 1.86641 0.9729C2.12613 0.9729 2.34002 1.05693 2.50807 1.22498L6.99974 5.71665L11.4914 1.22498C11.6595 1.05693 11.8734 0.9729 12.1331 0.9729C12.3928 0.9729 12.6067 1.05693 12.7747 1.22498C12.9428 1.39304 13.0268 1.60693 13.0268 1.86665C13.0268 2.12637 12.9428 2.34026 12.7747 2.50832L8.28307 6.99998L12.7747 11.4916C12.9428 11.6597 13.0268 11.8736 13.0268 12.1333C13.0268 12.393 12.9428 12.6069 12.7747 12.775C12.6067 12.943 12.3928 13.0271 12.1331 13.0271C11.8734 13.0271 11.6595 12.943 11.4914 12.775L6.99974 8.28332Z"
+                  fill="#003C3E"
+                />
+              </svg>
+            </div>
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18 36C20.3638 36 22.7044 35.5344 24.8883 34.6298C27.0722 33.7253 29.0565 32.3994 30.7279 30.7279C32.3994 29.0565 33.7253 27.0722 34.6298 24.8883C35.5344 22.7044 36 20.3638 36 18C36 15.6362 35.5344 13.2956 34.6298 11.1117C33.7253 8.92784 32.3994 6.94353 30.7279 5.27208C29.0565 3.60062 27.0722 2.27475 24.8883 1.37017C22.7044 0.465584 20.3638 -3.52233e-08 18 0C13.2261 7.11366e-08 8.64773 1.89642 5.27208 5.27208C1.89642 8.64773 0 13.2261 0 18C0 22.7739 1.89642 27.3523 5.27208 30.7279C8.64773 34.1036 13.2261 36 18 36ZM17.536 25.28L27.536 13.28L24.464 10.72L15.864 21.038L11.414 16.586L8.586 19.414L14.586 25.414L16.134 26.962L17.536 25.28Z"
+                  fill="#003C3E"
+                />
+              </svg>
+            </div>
+            <p>¡Listo!</p>
+            <span>Tu contraseña ha sido actualizado.</span>
+            <a href="#">Ingresar</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>
